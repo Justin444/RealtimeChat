@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Realtime Chat</title>
+    <link href="./static/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./static/styles/landing.css" rel="stylesheet">
+</head>
+  <body class="text-center">
+      <main class="form-signin">
+          <form action="{{url_for('chatroom')}}" method="post">
+            <h1 class="h2 mb-3 fw-normal">Join or create a chat room</h1>
+              <p><a href="https://github.com/Justin444/RealtimeChat">View project on github</a></p>
+            <br>
+            <div class="form-floating">
+              <input type="text" name="username" class="form-control" id="username" placeholder="Username" required autofocus>
+              <label for="username">Username</label>
+            </div>
+              <br>
+            <div class="form-floating">
+              <input type="text" name="room" class="form-control" id="room" placeholder="Room" required autofocus>
+              <label for="room">Room</label>
+            </div>
+              <br>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Start Chatting</button>
+          </form>
+      </main>
+  </body>
+</html>
